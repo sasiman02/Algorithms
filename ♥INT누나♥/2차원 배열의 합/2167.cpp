@@ -15,7 +15,7 @@ int main() {
 	}
 	
 	int T;
-	int O[10000];
+	int O[10000] = {};
 	
 	cin >> T;
 	
@@ -40,13 +40,15 @@ int main() {
 //				}
 //			}
 //		}
+		tmp = i;
 		for(; j <= y; j++) {
 			if(j < y) {
-				for(;i <= N; i++) {
+				for(;i <= x; i++) {
 					O[t] += arr[i - 1][j - 1];
 				}
-				i = 1;
+				i = tmp;
 			}
+			
 			else if(j == y) {
 				for(;i <= x; i++) {
 					O[t] += arr[i - 1][j - 1];
