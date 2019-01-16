@@ -5,10 +5,10 @@ int main() {
 	int T;
 	int C;
 	cin >> T;
-	int a[100];
-	int b[100];
-	int c[100];
-	int d[100];
+	int a[10000];
+	int b[10000];
+	int c[10000];
+	int d[10000];
 	for(int i = 0; i < T; i++) {
 		cin >> C;
 		a[i] = C/25;
