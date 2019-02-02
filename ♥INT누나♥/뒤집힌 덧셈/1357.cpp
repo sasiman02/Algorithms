@@ -4,15 +4,16 @@
 using namespace std;
 
 int main() {
-	char X[4], Y[4],X1[4],Y1[4];
+	int arr1[4];
+	int arr2[4]; 
+	int arr[4];
 	
-	cin >> X >> Y;
+	cin >> arr1 >> arr2;
 	
-	for(int i = 0; i < strlen(X); i++) {
-		X1[i] = X[strlen(X) - i];
-	}
-	for(int i = 0; i < strlen(Y); i++) {
-		Y1[i] = Y[strlen(Y) - i];
+	cout << sizeof(arr1) << sizeof(arr2);
+	
+	for(int i = 0; i < 4; i++) {
+		arr[i] = arr1[3 - i] + arr2[3 - i];
 	}
 	
 	return 0;
