@@ -8,21 +8,15 @@ int main() {
 	
 	for(int i = 0; i < 3; i++) {
 		if(x[2 - i] > y[2 - i]) {
-			for(int j = 0; j < 3; j++) {
-				cout << x[2 - j];
-				break;
-			}
+			cout << x[2] << x[1] << x[0];
+			break;
 		}
 		else if(x[2 - i] < y[2 - i]) {
-			for(int j = 0; j < 3; j++) {
-				cout << y[2 - j];
-				break;
-			}
+			cout << y[2] << y[1] << y[0];
+			break;
 		}
 		if(i == 2 && x[2 - i] == y[2 - i]) {
-			for(int j = 0; j < 3; j++) {
-				cout << x[2 - j];
-			}
+			cout << y[2] << y[1] << y[0];
 		}
 	}
 }
